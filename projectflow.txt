@@ -1,10 +1,12 @@
+For this project we chose this basic application to test if everything works fine on my system, and if it does we will later add a lightweight ML application. 
+
 Steps to execute the Project:
 1. Build an app in your local machine and test it locally.
 2. Start DockerHub and Docker. 
 3. Prepare dockerfile in the project directory.
 
 4. Create the Docker Image and test it:
-    >> docker build -t kubernetes-test-app:latest
+    >> docker build -t kubernetes-test-app:latest .
     >> docker images
     >> docker run -p 5001:5001 kubernetes-test-app:latest
 
