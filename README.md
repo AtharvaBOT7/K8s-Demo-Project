@@ -38,7 +38,7 @@ K8s-Demo-Project/
 │   ├── deployment.yaml
 │   └── service.yaml
 └── README.md            # You are here
-
+```
 ---
 
 ## ⚡ Getting Started (Local)
