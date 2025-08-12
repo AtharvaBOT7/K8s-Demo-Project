@@ -1,0 +1,13 @@
+Steps to execute the Project:
+1. Build an app in your local machine and test it locally.
+2. Start DockerHub and Docker. 
+3. Prepare dockerfile in the project directory.
+
+4. Create the Docker Image and test it:
+    >> docker build -t kubernetes-test-app:latest
+    >> docker images
+    >> docker run -p 5001:5001 kubernetes-test-app:latest
+
+5. Create deployment.yaml file.
+
+6. Install MiniKube:
