@@ -25,19 +25,19 @@ This project is perfect for **beginners learning Kubernetes, Docker, and contain
 
 ## 📂 Project Structure
 
+```text
 K8s-Demo-Project/
-│── app.py # Flask backend code
-│── requirements.txt # Python dependencies
-│── Dockerfile # Docker build instructions
-│── templates/ # HTML templates
-│ └── index.html
-│── static/ # CSS styles
-│ └── styles.css
-│── k8s/ # Kubernetes manifests
-│ ├── deployment.yaml
-│ └── service.yaml
-│── README.md # You are here
-
+├── app.py               # Flask backend code
+├── requirements.txt     # Python dependencies
+├── Dockerfile           # Docker build instructions
+├── templates/           # HTML templates
+│   └── index.html
+├── static/              # CSS styles
+│   └── styles.css
+├── k8s/                 # Kubernetes manifests
+│   ├── deployment.yaml
+│   └── service.yaml
+└── README.md            # You are here
 
 ---
 
