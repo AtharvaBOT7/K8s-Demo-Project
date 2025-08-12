@@ -100,7 +100,3 @@ Feel free to fork this project, submit pull requests, or open issues to improve 
 This project is licensed under the **MIT License**.
 
 ---
-
-<p align="center">
-  Made with ❤️ by <a href="https://github.com/<your-username>">Your Name</a>
-</p>
