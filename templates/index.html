@@ -4,46 +4,21 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kubernetes Test App</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-  <div class="background">
-    <div class="gradient-blob blob-1"></div>
-    <div class="gradient-blob blob-2"></div>
-  </div>
-
-  <main class="card">
-    <header class="header">
-      <div class="logo">K8s</div>
-      <h1>Kubernetes Test Application</h1>
-      <p class="subtitle">Tiny Flask app, big cloud energy.</p>
-    </header>
+  <div class="container">
+    <h1>Kubernetes Test Application</h1>
+    <p class="subtitle">Enter your name to get started</p>
 
     {% if message %}
-      <div class="alert success" role="status">
-        {{ message }}
-      </div>
+      <div class="message">{{ message }}</div>
     {% endif %}
 
-    <form class="form" method="POST" action="/">
-      <label for="name">Your name</label>
-      <input id="name" name="name" type="text" placeholder="e.g., Atharva" required />
-
-      <button type="submit" class="btn">
-        Say Hello
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
+    <form method="POST">
+      <input type="text" name="name" placeholder="Enter your name" required>
+      <button type="submit">Submit</button>
     </form>
-
-    <footer class="footer">
-      <span class="dot online"></span>
-      <span>Service: <strong>healthy</strong> · Port <strong>5001</strong></span>
-    </footer>
-  </main>
+  </div>
 </body>
 </html>
